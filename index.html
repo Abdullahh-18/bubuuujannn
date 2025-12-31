@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Happy New Year My Bubuuu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Background Music -->
+<audio autoplay loop>
+  <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_MacLeod/Valentines/Kevin_MacLeod_-_Carefree.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Floating Hearts -->
+<div class="hearts">
+  <span style="left:10%">❤️</span>
+  <span style="left:30%">💖</span>
+  <span style="left:50%">💕</span>
+  <span style="left:70%">💘</span>
+  <span style="left:90%">❤️</span>
+</div>
+
+<!-- Navigation -->
+<nav>
+  <a href="index.html">Home</a>
+  <a href="bubuuu.html">My Bubuuu</a>
+  <a href="memories.html">Memories</a>
+  <a href="forever.html">Forever</a>
+</nav>
+
+<!-- Main Content -->
+<div class="container">
+  <h1>🎉 Happy New Year 2025 🎉</h1>
+  <p>
+    To my bubuuu, meri jann, meri jann kii tooti,  
+    meri gulabo, meraa bachaa 💖
+  </p>
+
+  <!-- Typing Animation -->
+  <div class="typing">
+    I Love You Bubuuu ❤️
+  </div>
+</div>
+
+<!-- Nickname Rain -->
+<script>
+  const names = ["bubuuu", "gulabo", "meri jann", "mera bachaa", "jann kii tooti"];
+  setInterval(() => {
+    let name = document.createElement("div");
+    name.className = "nickname";
+    name.innerText = names[Math.floor(Math.random() * names.length)];
+    name.style.left = Math.random() * 100 + "vw";
+    document.body.appendChild(name);
+    setTimeout(() => { name.remove(); }, 6000);
+  }, 500);
+</script>
+
+<!-- Fireworks on Click -->
+<script>
+  document.body.addEventListener("click", function(e) {
+    let spark = document.createElement("div");
+    spark.innerHTML = "✨🎆✨";
+    spark.style.position = "absolute";
+    spark.style.left = e.pageX + "px";
+    spark.style.top = e.pageY + "px";
+    spark.style.fontSize = "20px";
+    document.body.appendChild(spark);
+    setTimeout(() => { spark.remove(); }, 800);
+  });
+</script>
+
+</body>
+</html>
